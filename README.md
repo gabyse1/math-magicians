@@ -3,12 +3,12 @@ A website for all fans of mathematics. It is a Single Page App (SPA) that allows
 
 ## Features
 
-- It only set up the environment and tools for the a new app.
+- It displays the user interface for a standard calculator.
 
 
 ## Built With
 
-- JavaScript / React
+- JavaScript / React / CSS
 
 
 ## Getting Started
