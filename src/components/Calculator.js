@@ -1,45 +1,47 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Calculator.css';
-
-const BtnComponent = ({ values }) => {
-  const [id, content] = values;
-  return (<button type="button" className="btn" id={`calc__btn-${id}`}>{content}</button>);
-};
-
-BtnComponent.propTypes = {
-  values: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
+import BtnComponent from './BtnComponent';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      calcObject: {
+        total: null, next: null, operation: null, display: '0',
+      },
+    };
+    this.calculateHandler = this.calculateHandler.bind(this);
+  }
+
+  calculateHandler(btnName) {
+    this.setState((prevState) => ({ calcObject: calculate(prevState.calcObject, btnName) }));
   }
 
   render() {
+    const currentState = this.state;
     return (
       <div className="calc__container">
-        <div className="calc__result grid-col-span-4">0</div>
-        <BtnComponent values={['ac', 'AC']} />
-        <BtnComponent values={['addsub', '+/-']} />
-        <BtnComponent values={['percen', '%']} />
-        <BtnComponent values={['divisi', '/']} />
-        <BtnComponent values={['7', '7']} />
-        <BtnComponent values={['8', '8']} />
-        <BtnComponent values={['9', '9']} />
-        <BtnComponent values={['multip', 'x']} />
-        <BtnComponent values={['4', '4']} />
-        <BtnComponent values={['5', '5']} />
-        <BtnComponent values={['6', '6']} />
-        <BtnComponent values={['substr', '-']} />
-        <BtnComponent values={['1', '1']} />
-        <BtnComponent values={['2', '2']} />
-        <BtnComponent values={['3', '3']} />
-        <BtnComponent values={['add', '+']} />
-        <BtnComponent values={['0', '0']} />
-        <BtnComponent values={['dot', '.']} />
-        <BtnComponent values={['equal', '=']} />
+        <div className="calc__result grid-col-span-4">{currentState.calcObject.display}</div>
+        <BtnComponent values={['ac', 'AC']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['addsub', '+/-']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['percen', '%']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['divisi', '÷']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['7', '7']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['8', '8']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['9', '9']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['multip', 'x']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['4', '4']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['5', '5']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['6', '6']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['substr', '-']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['1', '1']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['2', '2']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['3', '3']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['add', '+']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['0', '0']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['dot', '.']} calculateHandler={this.calculateHandler} />
+        <BtnComponent values={['equal', '=']} calculateHandler={this.calculateHandler} />
       </div>
     );
   }
