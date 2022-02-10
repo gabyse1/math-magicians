@@ -1,6 +1,9 @@
 # Math Magician
 A website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, and read a random math-related quote.
 
+![screenshot](./screenshot.png)
+
+
 ## Features
 
 - It displays the user interface for a standard calculator.
