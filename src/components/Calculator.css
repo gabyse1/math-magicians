@@ -3,7 +3,7 @@
   max-width: 280px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 46px);
 }
 
 .grid-col-span-4 {
@@ -35,6 +35,9 @@
 
 .calc__result {
   padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 1.5rem;
   color: #fff;
   text-align: right;
