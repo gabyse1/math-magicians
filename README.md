@@ -7,7 +7,8 @@ A website for all fans of mathematics. It is a Single Page App (SPA) that allows
 ## Features
 
 - It displays the user interface for a standard calculator using React components.
-- It uses events and lift state up approach to pass information between components.
+- It uses events and lift state up approach to update state to all components.
+- It uses useState hook to keep the state updated within functional components.
 
 
 ## Built With
