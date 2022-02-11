@@ -16,6 +16,11 @@ A website for all fans of mathematics. It is a Single Page App (SPA) that allows
 - JavaScript / React / CSS
 
 
+## Live Demo
+
+[Math magicians](https://gabyse1.github.io/math-magicians)
+
+
 ## Getting Started
 
 
