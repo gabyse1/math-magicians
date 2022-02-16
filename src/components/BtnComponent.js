@@ -9,7 +9,7 @@ const BtnComponent = ({ values, calculateHandler }) => {
   };
 
   return (
-    <button type="button" className="btn" id={`calc__btn-${id}`} onClick={getBtnContent}>
+    <button type="button" data-testid="calcBtn" className="btn" id={`calc__btn-${id}`} onClick={getBtnContent}>
       {content}
     </button>
   );
