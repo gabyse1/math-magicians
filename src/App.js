@@ -1,10 +1,22 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Calculator from './components/Calculator';
+import Home from './pages/Home';
+import Quote from './pages/Quote';
 
 function App() {
   return (
     <div className="App">
-      <Calculator />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/quote" element={<Quote />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

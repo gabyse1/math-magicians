@@ -1,9 +1,43 @@
 .App {
   width: 100%;
   height: 100vh;
-  display: flex;
+  padding: 60px 0 40px 0;
+  display: block;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #f8f9fa;
+  position: relative;
+}
+
+main {
+  width: 90%;
+  height: 100%;
+  padding: 2rem 5%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #bfc5ca #dee2e6;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: #bfc5ca;
+  border-radius: 20px;
+}
+
+main::-webkit-scrollbar {
+  width: 6px;
+}
+
+main::-webkit-scrollbar-track {
+  background: #dee2e6;
+}
+
+main h3 {
+  text-align: center;
+  line-height: normal;
 }
