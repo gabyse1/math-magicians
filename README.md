@@ -14,7 +14,7 @@ It is a Single Page App (SPA) that allows users make simple calculations, and re
 
 ## Built With
 
-- JavaScript / React / CSS
+- JavaScript / React / SCSS
 
 
 ## Live Demo
