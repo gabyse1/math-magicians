@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Quote /> component Component render correctly 1`] = `
+<main
+  className="page__quote"
+>
+  <p
+    className="quote__message"
+  >
+    "
+    Mathematic is about numbers, equations, computations, or algorithms: It is about understanding.
+    "
+  </p>
+  <p
+    className="quote__author"
+  >
+    —
+    <strong>
+      William Paul Thurston
+    </strong>
+    —
+  </p>
+</main>
+`;
