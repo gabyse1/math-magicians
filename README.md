@@ -1,5 +1,5 @@
 # Math Magician
-A website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, and read a random math-related quote.
+It is a Single Page App (SPA) that allows users make simple calculations, and read a random math-related quote.
 
 ![screenshot](./screenshot.png)
 
@@ -7,6 +7,7 @@ A website for all fans of mathematics. It is a Single Page App (SPA) that allows
 ## Features
 
 - It displays the user interface for a standard calculator using React components.
+- It uses react router to navigate between three pages dinamically.
 - It uses events and lift state up approach to update state to all components.
 - It uses useState hook to keep the state updated within functional components.
 
