@@ -1,0 +1,49 @@
+.navbar__box {
+  height: 60px;
+  padding: 0.5rem 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #009bc9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar__brand {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #fff;
+}
+
+.navbar__menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.navbar__menu-list > * {
+  padding: 0 0.75rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar__menu-item .nav-link {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.navbar__menu-item .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar__menu-item .nav-link.active {
+  color: rgba(255, 255, 255, 1);
+}
