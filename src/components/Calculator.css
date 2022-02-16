@@ -1,4 +1,17 @@
-.calc__container {
+.page__calculator {
+  width: 90%;
+  height: 100%;
+  padding: 2rem 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page__calculator > * {
+  margin: 0 1rem;
+}
+
+.calc__box {
   width: 100%;
   max-width: 280px;
   display: grid;
