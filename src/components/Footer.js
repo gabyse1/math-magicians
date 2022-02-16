@@ -1,7 +1,7 @@
-import './Footer.css';
+import '../scss/Footer.scss';
 
 const Footer = () => (
-  <footer className="footer__box">© 2022 Copyright... Gabriela Sánchez Espirilla</footer>
+  <footer className="footer__box">© 2022 Gabriela Sánchez Espirilla</footer>
 );
 
 export default Footer;

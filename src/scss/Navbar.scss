@@ -1,0 +1,50 @@
+.navbar__box {
+  height: 60px;
+  padding: 0.5rem 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1173ac;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar__brand {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: #fff;
+}
+
+.navbar__menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+
+  > * {
+    padding: 0 0.75rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+    .nav-link {
+      font-size: 1.2rem;
+      line-height: 1.2;
+      color: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+
+      &.active {
+        color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+      }
+    }
+  }
+}

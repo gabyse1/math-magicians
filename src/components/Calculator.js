@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Calculator.css';
+import '../scss/Calculator.scss';
 import BtnComponent from './BtnComponent';
 import calculate from '../logic/calculate';
 
@@ -13,7 +13,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="page__calculator">
+    <main className="page__calculator">
       <div className="calc__description">
         <h2 className="main__title">Let&apos;s do some Math</h2>
       </div>
@@ -39,7 +39,7 @@ const Calculator = () => {
         <BtnComponent values={['dot', '.']} calculateHandler={calculateHandler} />
         <BtnComponent values={['equal', '=']} calculateHandler={calculateHandler} />
       </div>
-    </div>
+    </main>
   );
 };
 
