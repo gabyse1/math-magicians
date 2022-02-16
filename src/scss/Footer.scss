@@ -1,0 +1,14 @@
+.footer__box {
+  height: 40px;
+  padding: 0.5rem 1rem;
+  background-color: #1173ac;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}

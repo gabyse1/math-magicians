@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  color: #023047;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
