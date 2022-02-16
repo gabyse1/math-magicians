@@ -13,7 +13,7 @@ const Navbar = () => {
       <span id="brand-link" className="navbar__brand nav-link">Math Magicians</span>
       <ul className="navbar__menu-list">
         {
-          links.map((link) => <li key={link.id} className="navbar__menu-item"><NavLink to={link.path} className="nav-link">{link.text}</NavLink></li>)
+          links.map((link) => <li key={link.id} className="navbar__menu-item"><NavLink data-testid="navItem" to={link.path} className="nav-link">{link.text}</NavLink></li>)
         }
       </ul>
     </nav>
