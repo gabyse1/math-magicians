@@ -1,5 +1,5 @@
 const Home = () => (
-  <main>
+  <main className="page__home">
     <h2 className="main__title">Welcome to our page</h2>
     <p>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
