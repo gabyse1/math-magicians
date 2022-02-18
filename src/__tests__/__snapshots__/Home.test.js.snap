@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Home /> component Component render correctly 1`] = `
-<main>
+<main
+  className="page__home"
+>
   <h2
     className="main__title"
   >

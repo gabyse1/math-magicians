@@ -8,7 +8,7 @@ exports[`<Quote /> component Component render correctly 1`] = `
     className="quote__message"
   >
     "
-    Mathematic is about numbers, equations, computations, or algorithms: It is about understanding.
+    Mathematics is the most beautiful and most powerful creation of the human spirit.
     "
   </p>
   <p
@@ -16,7 +16,7 @@ exports[`<Quote /> component Component render correctly 1`] = `
   >
     —
     <strong>
-      William Paul Thurston
+      Stefan Banach, Polish mathematician
     </strong>
     —
   </p>

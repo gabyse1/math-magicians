@@ -15,11 +15,11 @@ const Calculator = () => {
 
   return (
     <main className="page__calculator">
-      <div className="calc__description">
+      <div data-testid="calc__description" className="calc__description">
         <h2 className="main__title">Let&apos;s do some Math</h2>
       </div>
       <div data-testid="calc__box" className="calc__box">
-        <div className="calc__result grid-col-span-4">{calcObject.display}</div>
+        <div data-testid="calc__display-box" className="calc__result grid-col-span-4">{calcObject.display}</div>
         <BtnComponent values={['ac', 'AC']} calculateHandler={calculateHandler} />
         <BtnComponent values={['addsub', '+/-']} calculateHandler={calculateHandler} />
         <BtnComponent values={['percen', '%']} calculateHandler={calculateHandler} />

@@ -3,6 +3,7 @@
 exports[`<Footer /> component Component render correctly 1`] = `
 <footer
   className="footer__box"
+  data-testid="footerDesc"
 >
   © 2022 Gabriela Sánchez Espirilla
 </footer>

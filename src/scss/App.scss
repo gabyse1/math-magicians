@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #e8e8e9;
+  background-color: #fff;
   position: relative;
 
   main {
@@ -16,7 +16,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow: auto;
     scrollbar-width: thin;
@@ -38,6 +38,15 @@
     h2 {
       align-self: flex-start;
       line-height: normal;
+    }
+
+    &.page__quote,
+    &.page__calculator {
+      text-align: center;
+    }
+
+    &.page__quote {
+      justify-content: center;
     }
   }
 }

@@ -6,6 +6,7 @@ exports[`<Calculator /> component Component render correctly 1`] = `
 >
   <div
     className="calc__description"
+    data-testid="calc__description"
   >
     <h2
       className="main__title"
@@ -19,6 +20,7 @@ exports[`<Calculator /> component Component render correctly 1`] = `
   >
     <div
       className="calc__result grid-col-span-4"
+      data-testid="calc__display-box"
     >
       0
     </div>
