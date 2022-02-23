@@ -19,7 +19,10 @@ It is a Single Page App (SPA) that allows users make simple calculations, and re
 
 ## Live Demo
 
-[Math magicians](https://gabyse1.github.io/math-magicians)
+[HEROKU](https://mathmagiciansgaby.herokuapp.com/)
+[NETLIFY](https://mathmagiciansgaby.netlify.app/)
+[GH-PAGES](https://gabyse1.github.io/math-magicians)
+
 
 
 ## Getting Started
