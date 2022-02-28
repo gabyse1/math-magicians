@@ -1,25 +1,27 @@
 # Math Magician
 It is a Single Page App (SPA) that allows users make simple calculations, and read a random math-related quote.
 
-![screenshot](./screenshot.png)
+![screenshot](./mm-screenshot.png)
 
 
 ## Features
 
 - It displays the user interface for a standard calculator using React components.
 - It uses react router to navigate between three pages dinamically.
-- It uses events and lift state up approach to update state to all components.
+- It uses events and lift state up approach to update the state to all components.
 - It uses useState hook to keep the state updated within functional components.
 
 
 ## Built With
 
-- JavaScript / React / SCSS
+- JavaScript
+- React
+- SCSS
 
 
 ## Live Demo
 
-[Math magicians](https://gabyse1.github.io/math-magicians)
+[Math magicians](https://gabyse1.github.io/math-magicians/)
 
 
 ## Getting Started
